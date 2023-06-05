@@ -8,11 +8,11 @@ export default function Search() {
     const router =useRouter()
     const handler=async(e:FormEvent<HTMLFormElement>)=>{
         e.preventDefault()
-        setSearch(" ")
-        router.push(`/${search}`)
+        setSearch("")
+        router.push(`/${search}/`)
     }
   return (
- <form onSubmit={e=>handler} className="w-50 flex justify-center md:justify-between">
+ <form onSubmit={handler} className="w-50 flex justify-center md:justify-between">
         <input 
             type="text" 
             value={search} 
