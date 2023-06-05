@@ -37,7 +37,7 @@ export default async function SearhResults({params:{searchTerm}}: Props) {
                     <Item key={result.pageid} result={result}/>
                 )
             }
-        ):  <h2 className="p-2 text-xl">{`${searchTerm} NOT FOUND`}</h2>
+        ):  <h2 className="p-2 text-l">{`${searchTerm} NOT FOUND`}</h2>
         }
     </main>
   return content
